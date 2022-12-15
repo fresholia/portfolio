@@ -1,14 +1,12 @@
-import withHead from 'app/core/page/PageWrapper';
+import Page from "components/page/Page";
 
-function Home() {
-  return <main>
-    <h1> heyyoo! </h1>
-  </main>
+export default function Home() {
+  return <Page title="Home">
+    <Page.Header>
+      <h1>Home</h1>
+    </Page.Header>
+    <Page.Content>
+      <h1>Home</h1>
+    </Page.Content>
+  </Page>
 }
-
-export default withHead({
-  title: 'Home',
-  description: 'Home page',
-  keywords: 'home, page',
-  robots: 'index, follow',
-})(Home);
