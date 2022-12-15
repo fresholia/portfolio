@@ -1,7 +1,16 @@
 import React from 'react';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'link';
-export type ButtonSize = 'small' | 'medium' | 'large';
+export enum ButtonVariant {
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Tertiary = 'tertiary',
+}
+
+export enum ButtonSize {
+  Small = 'small',
+  Medium = 'medium',
+  Large = 'large',
+}
 
 export type ButtonProps = {
   children: React.ReactNode;
