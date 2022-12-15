@@ -22,6 +22,11 @@ button.root {
 }
 
 .button-link {
+  background: transparent;
+  color: map-get($palette, dark, text, primary);
+  &:hover {
+    color: map-get($BLUE, 500);
+  }
 }
 
 .button-small {

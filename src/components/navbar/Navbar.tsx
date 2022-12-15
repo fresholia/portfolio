@@ -10,11 +10,11 @@ export default function Navbar() {
     <nav
       className={combineClassNames(styles.root, 'is-flex', 'is-align-center')}
     >
-      <ul className={styles.list}>
+      <ul className={combineClassNames(styles.list, 'is-flex')}>
         {NavbarItems.map(({ label, link }) => (
           <li key={label} className={styles.item}>
             <Link href={link}>
-              <Button variant={Button.Variant.Tertiary} size={Button.Size.Medium}>{label}</Button>
+              <Button variant={Button.Variant.Link} size={Button.Size.Medium}>{label}</Button>
             </Link>
           </li>
         ))}

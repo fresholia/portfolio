@@ -23,6 +23,8 @@ function Typography<
     <Component
       className={combineClassNames(
         styles.root,
+        'is-flex',
+        'is-align-center',
         styles[`typography--${variant}`],
         styles[`typography--${textWeight}`],
         `color--${textColor}`,
@@ -39,3 +41,4 @@ Typography.Variant = TypographyVariant;
 Typography.Weight = TypographyWeight;
 
 export default Typography;
+export * from './Typography.types';
