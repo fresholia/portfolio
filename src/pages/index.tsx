@@ -9,7 +9,12 @@ export default function Home() {
         <Navbar />
       </Page.Header>
       <Page.Content>
-        <Typography variant={Typography.Variant.H1} textColor="primary" as="h1">
+        <Typography
+          variant={Typography.Variant.H2}
+          textColor="primary"
+          textWeight={Typography.Weight.BOLD}
+          as="h1"
+        >
           enesakilliok
         </Typography>
       </Page.Content>

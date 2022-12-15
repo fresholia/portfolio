@@ -36,5 +36,6 @@ function Typography<
 }
 
 Typography.Variant = TypographyVariant;
+Typography.Weight = TypographyWeight;
 
 export default Typography;
