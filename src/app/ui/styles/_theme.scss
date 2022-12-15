@@ -1,0 +1,39 @@
+$GRAY: (
+  100: #f7f7f7,
+  200: #e1e1e1,
+  300: #cccccc,
+  400: #b8b8b8,
+  500: #a3a3a3,
+  600: #8e8e8e,
+  700: #797979,
+  800: #646464,
+  900: #4f4f4f,
+  1000: #3a3a3a,
+  1100: #262626,
+  1200: #111111,
+);
+
+$palette: (
+  dark: (
+    background: (
+      paper: map-get($GRAY, 1000),
+      default: map-get($GRAY, 1100),
+      neutral: map-get($GRAY, 1200),
+    ),
+    text: (
+      primary: map-get($GRAY, 100),
+      secondary: map-get($GRAY, 200),
+      disabled: map-get($GRAY, 300),
+      hint: map-get($GRAY, 400),
+    ),
+  ),
+);
+
+@each $name, $color in $GRAY {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

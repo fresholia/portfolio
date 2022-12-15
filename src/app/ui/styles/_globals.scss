@@ -1,0 +1,7 @@
+@import '_theme';
+@import 'overrides/_overrides';
+
+body {
+  background: map-get($palette, dark, background, neutral);
+  color: map-get($palette, dark, text, primary);
+}
