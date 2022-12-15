@@ -5,6 +5,8 @@ import { PageProps } from './Page.types';
 import styles from './Page.module.scss';
 import Head from 'next/head';
 
+import { combineClassNames } from "app/core/utils/classUtils/classUtils";
+
 function Page({ title, children }: PageProps) {
   return (
     <>
@@ -12,7 +14,7 @@ function Page({ title, children }: PageProps) {
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={styles.page}>{children}</main>
+      <main className={combineClassNames(styles.root, 'is-flex', 'is-flex-direction-column')}>{children}</main>
     </>
   );
 }
