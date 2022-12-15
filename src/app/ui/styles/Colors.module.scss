@@ -1,0 +1,11 @@
+/*
+  In Next.js, we can't import global scss files like _theme.scss.
+  So this file named `Colors.module` is a workaround to import
+    the global scss variables into the component.
+ */
+
+:export {
+  @each $name, $color in $colors {
+    #{$name}: #{$color};
+  }
+}

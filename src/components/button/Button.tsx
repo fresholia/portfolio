@@ -4,7 +4,7 @@ import { combineClassNames } from 'app/core/utils/classUtils/classUtils';
 import styles from './Button.module.scss';
 
 function Button({
-  variant,
+  variant = ButtonVariant.Primary,
   size = ButtonSize.Medium,
   children,
   className,
@@ -18,6 +18,7 @@ function Button({
         styles[`button-${variant}`],
         styles[`button-${size}`]
       )}
+      type="button"
       {...props}
     >
       {children}
@@ -29,3 +30,5 @@ Button.Variant = ButtonVariant;
 Button.Size = ButtonSize;
 
 export default Button;
+export { ButtonVariant, ButtonSize };
+export type { ButtonProps };

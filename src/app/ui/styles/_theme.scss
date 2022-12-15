@@ -1,3 +1,5 @@
+$theme: 'dark';
+
 $GRAY: (
   100: #f7f7f7,
   200: #e1e1e1,
@@ -11,6 +13,35 @@ $GRAY: (
   1000: #3a3a3a,
   1100: #262626,
   1200: #111111,
+);
+
+$BLUE: (
+  100: #e6f6ff,
+  200: #bae6ff,
+  300: #7dd3ff,
+  400: #38baff,
+  500: #0095ff,
+  600: #006fce,
+  700: #0057b2,
+  800: #004096,
+  900: #002a7a,
+  1000: #00145e,
+  1100: #000042,
+);
+
+$ORANGE: (
+  100: #fff4e6,
+  200: #ffe8ba,
+  300: #ffd97d,
+  400: #ffc738,
+  500: #ffb700,
+  600: #e69100,
+  700: #cc7a00,
+  800: #b26300,
+  900: #994c00,
+  1000: #803500,
+  1100: #671e00,
+  1200: #4d0700,
 );
 
 $palette: (
@@ -29,11 +60,11 @@ $palette: (
   ),
 );
 
-@each $name, $color in $GRAY {
-  .text-#{$name} {
-    color: $color;
-  }
-  .bg-#{$name} {
-    background-color: $color;
-  }
-}
+$colors: (
+  'primary': map-get($GRAY, 100),
+  'secondary': map-get($GRAY, 200),
+  'tertiary': map-get($GRAY, 300),
+  'disabled': map-get($GRAY, 400),
+  'blue': map-get($BLUE, 700),
+  'orange': map-get($ORANGE, 700),
+);

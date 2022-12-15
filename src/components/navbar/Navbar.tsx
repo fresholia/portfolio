@@ -14,7 +14,7 @@ export default function Navbar() {
         {NavbarItems.map(({ label, link }) => (
           <li key={label} className={styles.item}>
             <Link href={link}>
-              <Button variant={Button.Variant.Primary} size={Button.Size.Medium}>{label}</Button>
+              <Button variant={Button.Variant.Tertiary} size={Button.Size.Medium}>{label}</Button>
             </Link>
           </li>
         ))}

@@ -4,6 +4,6 @@ type ConditionalClassName = {
 }
 type CombineClassNamesProps = (string | undefined | ConditionalClassName)[];
 
-export function combineClassNames(...classNames: (string | undefined)[]): string {
+export function combineClassNames(...classNames: CombineClassNamesProps): string {
   return classNames.filter(Boolean).join(' ');
 }
