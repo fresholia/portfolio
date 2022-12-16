@@ -1,5 +1,5 @@
-import { ButtonProps, ButtonVariant, ButtonSize } from './Button.types';
-import { combineClassNames } from 'app/core/utils/classUtils/classUtils';
+import { ButtonProps, ButtonSize, ButtonVariant } from './Button.types';
+import { combineClassNames } from 'utils/classUtils';
 
 import styles from './Button.module.scss';
 

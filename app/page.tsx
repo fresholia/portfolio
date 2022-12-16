@@ -1,6 +1,6 @@
 import Page from 'components/page/Page';
 import Navbar from 'components/navbar/Navbar';
-import Typography, { Colors } from "../components/typography/Typography";
+import Typography from 'components/typography/Typography';
 
 export default function Home() {
   return (
@@ -12,13 +12,11 @@ export default function Home() {
           textWeight={Typography.Weight.BOLD}
           as="h1"
         >
-          enes
-          akilliok
+          enes akilliok
         </Typography>
         <Navbar />
       </Page.Header>
       <Page.Content>
-
         <Typography
           variant={Typography.Variant.BODY}
           textColor="tertiary"

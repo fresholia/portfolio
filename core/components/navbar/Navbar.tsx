@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import { NavbarItems } from './Navbar.constants';
 
 import styles from './Navbar.module.scss';
-import { combineClassNames } from 'app/core/utils/classUtils/classUtils';
-import Button from "../button/Button";
+import { combineClassNames } from 'utils/classUtils';
+import Button from '../button/Button';
 
 export default function Navbar() {
   return (
@@ -13,9 +12,9 @@ export default function Navbar() {
       <ul className={combineClassNames(styles.list, 'is-flex')}>
         {NavbarItems.map(({ label, link }) => (
           <li key={label} className={styles.item}>
-            <Link href={link}>
-              <Button variant={Button.Variant.Link} size={Button.Size.Medium}>{label}</Button>
-            </Link>
+            <Button variant={Button.Variant.Link} size={Button.Size.Medium}>
+              {label}
+            </Button>
           </li>
         ))}
       </ul>

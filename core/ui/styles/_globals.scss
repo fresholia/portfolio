@@ -1,6 +1,6 @@
-@import '_theme-utils';
-@import 'helpers/_helpers';
-@import 'overrides/_overrides';
+@import 'theme-utils';
+@import 'helpers/helpers';
+@import 'overrides/overrides';
 
 $purple: rgba(168, 47, 212, 0.27);
 body {

@@ -1,5 +1,5 @@
 import React from 'react';
-import colors from 'app/ui/styles/Colors.module.scss';
+import colors from '../../ui/styles/Colors.module.scss';
 
 export enum TypographyVariant {
   H1 = 'h1',

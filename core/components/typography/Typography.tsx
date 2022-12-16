@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypographyProps, TypographyVariant, TypographyWeight } from "./Typography.types";
-import { combineClassNames } from "app/core/utils/classUtils/classUtils";
+import { combineClassNames } from "../../utils/classUtils";
 
 import styles from './Typography.module.scss';
 
