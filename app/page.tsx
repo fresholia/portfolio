@@ -1,3 +1,5 @@
+'use client';
+
 import Page from 'components/page/Page';
 import Navbar from 'components/navbar/Navbar';
 import Typography from 'components/typography/Typography';
